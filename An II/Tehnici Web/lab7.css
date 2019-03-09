@@ -1,0 +1,45 @@
+section {
+	display: inline-flex;
+	border: solid 4px red;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+ul {
+	border: solid 4px lightblue;
+	list-style: none;
+}
+
+li {
+	border: solid 2px red;
+	margin: 10px;
+}
+
+h2 {
+	align-items: start;
+	border: solid 3px pink;
+}
+
+nav > ul {
+	display: flex;
+}
+
+figure {
+	flex-basis: 300px;
+	border: dashed blue;
+}
+
+.a {
+	color: pink;
+}
+
+.b {
+	background-color: green;
+}
+
+
+img {
+	width: 300px;
+	height: auto;
+}

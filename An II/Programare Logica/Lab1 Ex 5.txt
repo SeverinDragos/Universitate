@@ -1,0 +1,16 @@
+char(king).
+char(richMan).
+char(priest).
+
+choice(god, priest). 
+choice(money, richMan).
+choice(law, king).
+
+is_killed(Alegere, X, Y) :- choice(Alegere, Supravietuitor), char(X), X \= Supravietuitor, char(Y), Y \= Supravietuitor, X\= Y.
+
+
+/** <examples>
+?- is_killed(god, X, Y)
+?- is_killed(law, X, Y)
+?- is_killed(money, X, Y)
+*/

@@ -1,0 +1,8 @@
+div {
+	height: 300px;
+	border: solid 4px blue;
+}
+
+input {
+	position: absolute;
+}

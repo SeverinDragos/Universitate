@@ -1,0 +1,70 @@
+p:nth-of-type(2) {
+  position: relative;
+  border: solid 2px;
+  color: red;
+  left: 50px;
+  top: 50px;
+  background-color: purple;
+  transform: rotate(20deg);
+  
+}
+
+p:nth-of-type(4) {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  border: solid 2px;
+  color: blue;
+  transform: skewY(50deg);
+}
+
+p:nth-of-type(5) {
+	transition: transform 1s;
+}
+
+p:nth-of-type(5):hover {
+	transform: skew(45deg);
+}
+
+p:nth-of-type(6) {
+  position: fixed;
+  border: solid 2px;
+  color: lightblue;
+  left: 50px;
+  top: 50px;
+  transform: scaleY(2.5);
+}
+
+p:nth-of-type(8) {
+  position: sticky;
+  border: solid 2px;
+  color: grey;
+  bottom: 50px;
+}
+
+section {
+  border: dotted black;
+}
+
+img { 
+  width: 20%;
+  float: right;
+  transition: width 3s, border 3s;
+  animation: burghezul 5s infinite alternate;
+}
+
+@keyframes burghezul{
+  0% {width:20%; border: solid red;}
+  50% {width:30%; border: dashed purple; position: absolute}
+  100% {width:40%; border: solid blue;}
+}
+
+img:hover {
+  width: 500px;
+  border: dashed blue;
+}
+
+article {
+  border: dashed 3px;
+  overflow: scroll;
+}
